@@ -31,6 +31,8 @@ namespace SocialNetwork.PLL.Views
                 Console.WriteLine("Просмотреть входящие сообщения (нажмите 5)");
                 Console.WriteLine("Просмотреть исходящие сообщения (нажмите 6)");
                 Console.WriteLine("Выйти из профиля (нажмите 7)");
+                Console.WriteLine("Посмотреть список друзей (нажмите 8)");
+                
 
                 string keyValue = Console.ReadLine();
 
@@ -70,6 +72,11 @@ namespace SocialNetwork.PLL.Views
                             Program.userOutcomingMessageView.Show(user.OutgoingMessages);
                             break;
                         }
+                    case "8":
+                        {
+                            Program.listOfFriendsView.Show(user.MyFriends);
+                            break;
+                        }                    
                 }
             }
         }

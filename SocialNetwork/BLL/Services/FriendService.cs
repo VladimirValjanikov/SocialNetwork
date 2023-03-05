@@ -49,7 +49,7 @@ namespace SocialNetwork.BLL.Services
 
             var friendEntity = new FriendEntity()
             {
-                user_id = friendAddingData.User_Id,
+                user_id = findUserEntity.id,
                 friend_id = findFriendEntity.id
             };
 
